@@ -1,0 +1,6 @@
+<li>  
+    <p>{{node.Name}}</p>       
+    <ul *ngFor="let item of node.Children">
+      <app-recursive-node [node]="item"></app-recursive-node>
+    </ul>
+</li>
